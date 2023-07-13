@@ -42,7 +42,7 @@ If you are using MinGW you can get PIL by using the following command: `pacman -
 Otherwise follow the steps below:
 
 # Executing the script
-- Download the script file and save it in a directory of your choice.
-- Open a command prompt or terminal and navigate to the directory where the script is located.
+- Download the repository and save it in a directory of your choice.
+- Open a command prompt or terminal and navigate to the directory where the repo is located.
 - Run the script by executing the following command: `python ttf2png.py` or `python3 ttf2png.py` if the first one doesn't work
 - This should generate `arial.png` and `arial.h` in the example folder
