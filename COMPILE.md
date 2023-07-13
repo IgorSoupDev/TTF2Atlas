@@ -5,7 +5,7 @@ This guide will walk you through the process of compiling the `ttf2png.py`.
 - Python 3.x installed
 - PIL (Python Imaging Library) package installed
 
-  If you already have Python and PIL in your machine you can skip to [Compiling](#compiling).
+If you already have Python and PIL installed in your machine you can skip to [Compiling](#compiling).
 
 ## How install Python
 ### Windows:
@@ -21,7 +21,7 @@ Otherwise follow the steps below.
 - Once the installation is complete, you can verify it by opening the Command Prompt and typing `python --version`. It should display the installed Python version.
 
 ### macOS:
-macOS typically comes with a pre-installed version of Python. To check if Python is already installed, open the Terminal and type "python --version". If a version is displayed, Python is already installed. If not, follow the steps below.
+macOS typically comes with a pre-installed version of Python. To check if Python is already installed, open the Terminal and type `python --version`. If a version is displayed, Python is already installed. If not, follow the steps below.
 - Visit the official Python website at https://www.python.org/.
 - Click on the `Downloads` tab.
 - On the downloads page, you'll see the latest version of Python. To install Python 3, select the latest version that starts with 3.x.x.
