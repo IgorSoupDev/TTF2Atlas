@@ -5,6 +5,8 @@ This guide will walk you through the process of compiling the `ttf2png.py`.
 - Python 3.x installed
 - PIL (Python Imaging Library) package installed
 
+  If you already have Python and PIL in your machine you can skip to [Compiling](#compiling).
+
 ## How install Python
 ### Windows:
 If you are using MinGW you can get Python by using the following command: `pacman -S mingw-w64-x86_64-python`
