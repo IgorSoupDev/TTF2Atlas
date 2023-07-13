@@ -113,7 +113,7 @@ font_image.save(PATH_WITHOUT_EXTENSION + ".png")
 # Generate the header file
 H_STRUCT = f"""static const struct
 {{
-	RECT character_src;
+	RECT src;
 	int16_t posx, posy;
 }} {os.path.splitext(FILE_NAME)[0]}_font[0x60] = {{
 """
