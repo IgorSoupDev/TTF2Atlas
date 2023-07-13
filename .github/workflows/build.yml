@@ -1,24 +1,25 @@
+name: TTF2PNG
+
 on: [push]
 
 jobs:
-	build:
-	name: TTF2PNG
-	runs-on: ubuntu-latest
-	strategy:
-			matrix:
-				python-version: ["3.9", "3.10", "3.11"]
+  build:
+  runs-on: ubuntu-latest
+  strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11"]
 
-	steps:
-		- uses: actions/checkout@v3
-		- name: Setup Python ${{ matrix.python-version }}
-			uses: actions/setup-python@v4
-			with:
-				python-version: ${{ matrix.python-version }}
-		- name: Install dependencies
-			run: |
-				python -m pip install --upgrade pip
-				python -m pip install -r requirements.txt
+  steps:
+    - uses: actions/checkout@v3
+    - name: Setup Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+       python -m pip install --upgrade pip
+       python -m pip install -r requirements.txt
 
-		- name: Test code
-			run: |
-				python ttf2png.py
+    - name: Test code
+      run: |
+        python ttf2png.py
