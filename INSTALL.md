@@ -1,11 +1,11 @@
-# Compilation Guide
-This guide will walk you through the process of compiling the `ttf2png.py`.
+# Install Guide
+This guide will walk you through the process of install everything you need for execute the `ttf2png.py`.
 
 # Requirements
 - Python 3.x installed
 - PIL (Python Imaging Library) package installed
 
-If you already have Python and PIL installed in your machine you can skip to [Compiling](#compiling).
+If you already have Python and PIL installed in your machine you can skip to [Executing the script](#executing-the-script).
 
 ## How install Python
 ### Windows:
@@ -41,7 +41,7 @@ If you are using MinGW you can get PIL by using the following command: `pacman -
 
 Otherwise follow the steps below:
 
-# Compiling
+# Executing the script
 - Download the script file and save it in a directory of your choice.
 - Open a command prompt or terminal and navigate to the directory where the script is located.
 - Run the script by executing the following command: `python ttf2png.py` or `python3 ttf2png.py` if the first one doesn't work
