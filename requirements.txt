@@ -1,0 +1,2 @@
+# These packages must be installed in order to run the tool
+Pillow >= 8.2.0

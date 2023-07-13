@@ -35,11 +35,12 @@ Python is often pre-installed on Linux distributions. To check if Python is alre
 - Install Python by running the following command: `sudo apt install python3`
 After the installation is complete, you can verify it by typing `python3 --version` in the terminal. It should display the installed Python version.
 
-## How install PIL
+## How to Install the Dependencies
 ### Windows:
-If you are using MinGW you can get PIL by using the following command: `pacman -S mingw-w64-x86_64-python-pillow`
+If you are using MinGW, you can install the dependencies by using the command `python3 -m pip install -r requirements.txt`. If not, use `py -3 -m pip install -r requirements.txt`.
 
-Otherwise follow the steps below:
+### Linux/MacOS:
+Use the following command: `py -3 -m pip install -r requirements.txt`.
 
 # Executing the script
 - Download the repository and save it in a directory of your choice.
