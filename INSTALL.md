@@ -40,7 +40,7 @@ After the installation is complete, you can verify it by typing `python3 --versi
 If you are using MinGW, you can install the dependencies by using the command `python3 -m pip install -r requirements.txt`. If not, use `py -3 -m pip install -r requirements.txt`.
 
 ### Linux/MacOS:
-Use the following command: `py -3 -m pip install -r requirements.txt`.
+Use the following command: `python3 -m pip install -r requirements.txt`.
 
 # Executing the script
 - Download the repository and save it in a directory of your choice.
