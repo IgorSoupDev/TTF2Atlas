@@ -24,6 +24,8 @@ A PNG image file (`your_font.png`), will be created, containing all the ASCII ch
 ### Header file
 A C header file (`your_font.h`) will be generated, which contains an array of structures. Each structure represents a character and includes information such as the source rectangle (`src`) and position (`posx and posy`) of the character itself. The name of the struct will be `your_font` + `_font`.
 
+**WARNING**: The `src` field of the character uses a data type called RECT that contains the members `x`, `y`, `width`, and `height`. If you don't have this type, you can replace it with something similar or manually add the fields `x`, `y`, `width`, and `height` in the code. I recommend using the `int16_t` type to avoid issues with negative numbers.
+
 ## Customization
 Feel free to customize the code further to meet your specific requirements. For example, you can modify the range of ASCII characters to include only a subset of characters or add additional functionality.
 
