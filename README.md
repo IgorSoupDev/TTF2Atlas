@@ -1,4 +1,4 @@
- # TTF2PNG
+ # TTF2Atlas
 A script that generates an ASCII character atlas image and a header struct from a TrueType Font (.ttf) file.
 
 ## How do i install and execute this script?
