@@ -3,9 +3,9 @@ This guide will walk you through the process of install everything you need for 
 
 # Requirements
 - Python 3.x installed
-- PIL (Python Imaging Library) package installed
+- Pillow (PIL fork) package installed
 
-If you already have Python and PIL installed in your machine you can skip to [Executing the script](#executing-the-script).
+If you already have Python and Pillow installed in your machine you can skip to [Executing the script](#executing-the-script).
 
 ## How install Python
 ### Windows:
