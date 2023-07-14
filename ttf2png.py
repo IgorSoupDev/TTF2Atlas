@@ -99,7 +99,7 @@ for i in range(FIRST_ASCII_CHARACTER, LAST_ASCII_CHARACTER + 1):
 		calculate_character_properties(character, character_pos)
 
 	# Draw the character on the image
-	font_draw.text((current_x, current_y), chr(i), font=font_data, anchor="la")
+	font_draw.text((current_x, current_y), character.char, font=font_data, anchor="la")
 
 	# Update the current position
 	current_x += character.w
@@ -130,5 +130,6 @@ with open(PATH_WITHOUT_EXTENSION + ".h", "w") as file:
 			character.char = "backslash"
 
 		# Write the character information to the file
-		file.write(f"   {{{{{character.x}, {character.y}, {character.w}, {character.h}}}, {position.x}, {position.y}}}, // {character.char}\n")
+		file.write(f"   {{{{{character.x}, {character.y}, {character.w}, {character.h}}}, ")
+		file.write(f"{position.x}, {position.y}}}, // {character.char}\n")
 	file.write("};")
