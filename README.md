@@ -1,11 +1,11 @@
  # TTF2PNG
 A script that generates an ASCII character atlas image and a header struct from a TrueType Font (.ttf) file.
 
-## How i install and execute this script?
-- To install and execute the script, please refer to the [INSTALL.md](doc/INSTALL.md) file for instructions.
+## How do i install and execute this script?
+- To install and execute the script, please refer to the [INSTALL.md](docs/INSTALL.md) file for instructions.
 
-## How i use this script?
-- If you are already familiar with the installation and execution process, you can proceed to the [USAGE.md](doc/USAGE.md) file to learn how to use the script.
+## How do i use this script?
+- If you are already familiar with the installation and execution process, you can proceed to the [USAGE.md](docs/USAGE.md) file to learn how to use the script.
 
 Please note that the images below are provided as a demonstration of what the tool can accomplish:
 
