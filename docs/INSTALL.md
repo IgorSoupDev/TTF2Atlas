@@ -1,5 +1,5 @@
 # Install Guide
-This guide will walk you through the process of install everything you need for execute the `ttf2png.py`.
+This guide will walk you through the process of install everything you need for execute the `ttf2atlas.py`.
 
 # Requirements
 - Python 3.x installed
@@ -45,5 +45,5 @@ Use the following command: `python3 -m pip install -r requirements.txt`.
 # Executing the script
 - Download the repository and save it in a directory of your choice.
 - Open a command prompt or terminal and navigate to the directory where the repo is located.
-- Run the script by executing the following command: `python ttf2png.py` or `python3 ttf2png.py` if the first one doesn't work
+- Run the script by executing the following command: `python ttf2atlas.py` or `python3 ttf2atlas.py` if the first one doesn't work
 - This should generate `arial.png` and `arial.h` in the example folder
