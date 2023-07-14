@@ -70,31 +70,33 @@ class Vector2:
 		self.x = 0
 		self.y = 0
 
-
-# Draw each ASCII character in the image
-for i in range(FIRST_ASCII_CHARACTER, LAST_ASCII_CHARACTER + 1):
-	# Check if current row is full, then move to the next row
-	if current_x + FONT_SIZE >= IMAGE_WIDTH:
-		current_x = 0
-		current_y += FONT_SIZE
-
-	# Get bounding boxes for the character
-	bbox_left_ascender = font_draw.textbbox((current_x, current_y), chr(i), font=font_data, anchor="la")
-	bbox_left_top = 	 font_draw.textbbox((current_x, current_y), chr(i), font=font_data, anchor="lt")
-
-	# Create a character object and set its properties
-	character = RECT()
-	character.char = chr(i)
+# Function to calculate character properties
+def calculate_character_properties(character, pos):
+	# Get bbox left ascender and set character object and its properties
+	bbox_left_ascender = font_draw.textbbox((current_x, current_y), character.char, font=font_data, anchor="la")
 	character.x, character.y, character.w, character.h = bbox_left_ascender
-
-	# Adjust the character's width and height
 	character.w -= character.x
 	character.h -= character.y
 
-	# Create and calculate character position relative to bounding box
+	# Get bbox_left_top
+	bbox_left_top = font_draw.textbbox((current_x, current_y), character.char, font=font_data, anchor="lt")
+	pos.x = bbox_left_ascender[0] - bbox_left_top[0]
+	pos.y = bbox_left_ascender[1] - bbox_left_top[1]
+
+# Draw each ASCII character in the image
+for i in range(FIRST_ASCII_CHARACTER, LAST_ASCII_CHARACTER + 1):
+	# Create a character object, position and set its properties
+	character = RECT()
+	character.char = chr(i)
 	character_pos = Vector2()
-	character_pos.x = bbox_left_ascender[0] - bbox_left_top[0]
-	character_pos.y = bbox_left_ascender[1] - bbox_left_top[1]
+
+	calculate_character_properties(character, character_pos)
+
+	# Check if current row is full, then move to the next row and upda character properties
+	if current_x + character.w >= IMAGE_WIDTH - 1:
+		current_x = 0
+		current_y += FONT_SIZE
+		calculate_character_properties(character, character_pos)
 
 	# Draw the character on the image
 	font_draw.text((current_x, current_y), chr(i), font=font_data, anchor="la")
