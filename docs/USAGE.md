@@ -7,7 +7,7 @@ The following constants can be adjusted in the beginning of the code:
 - **FONT_PATH**: Specifies the path to the font file (e.g, `example/arial.ttf`).
 - **IMAGE_WIDTH**: Sets the width of the generated image (default is 128 pixels).
 - **IMAGE_HEIGHT**: Sets the height of the generated image (default is 128 pixels).
-- **FONT_SIZE**: Controls the font size in pixels (default is 12)."
+- **FONT_SIZE**: Controls the font size in pixels (default is 12).
 - **ANTIALIASING**: Determines whether to enable antialiasing (default is False).
 
 ## Usage
