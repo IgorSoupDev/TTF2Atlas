@@ -29,5 +29,3 @@ Feel free to customize the code further to meet your specific requirements. For 
 
 ## License
 This tool is released under the MIT License. For more details, please refer to the LICENSE file.
-
-Please ensure that you replace the paths and filenames with the actual ones you are using in your code.
